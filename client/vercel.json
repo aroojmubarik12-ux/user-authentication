@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://user-authentication-qjyl.vercel.app/:path*"
+    }
+  ]
+}

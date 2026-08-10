@@ -22,7 +22,7 @@ function Login() {
     e.preventDefault(); // 1. Sabse pehle form reload hone se roken
 
     try {
-      const res = await axios.post("http://localhost:8000/login", user);
+      const res = await axios.post("/api/login", user);
 
       console.log("Response:", res.data);
       toast.success("User logged in successfully");

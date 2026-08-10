@@ -22,7 +22,7 @@ function Register() {
   async function submitHandler(e) {
     try {
       e.preventDefault();
-      const res = await axios.post("http://localhost:8000/register", user);
+      const res = await axios.post("/api/register", user);
       console.log(user);
       toast.success("user registered successfully");
       navigate("/login");
